@@ -19,8 +19,7 @@ public:
         // recursive case
          solve(root->left, k);
          k--;
-         cout<<k<<" "; 
-         if(k==0) ans = root->val;
+         if(k==0){ans = root->val;return;} 
          solve(root->right,k);
 
     }
